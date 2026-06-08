@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Tudor Vartolomei with Bootstrap">
+    <title>CELMEC IX - Register</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbar-fixed/">
+
+    
+    <!-- Bootstrap core CSS -->
+	<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="mystyle.css" rel="stylesheet">
+    
+	<script>
+		function myFunction() {
+			var talkYes = document.getElementById("talkyes");
+			var talkNo = document.getElementById("talkno");
+			var posterYes = document.getElementById("posteryes");
+			var posterNo = document.getElementById("posterno");
+			
+			// Get the output text
+			var talkform = document.getElementsByClassName("talkform");
+			var posterform = document.getElementsByClassName("posterform");
+
+			// If the checkbox is checked, display the output text
+			if (talkYes.checked == true){
+				talkform[0].style.display = "block";
+				talkform[1].style.display = "block";
+			} else {
+				talkform[0].style.display = "none";
+				talkform[1].style.display = "none";
+			}
+			if (talkNo.checked == true){
+				talkform[0].style.display = "none";
+				talkform[1].style.display = "none";
+			} else {
+				talkform[0].style.display = "block";
+				talkform[1].style.display = "block";
+			}
+			
+			if (posterYes.checked == true){
+				posterform[0].style.display = "block";
+				posterform[1].style.display = "block";
+			} else {
+				posterform[0].style.display = "none";
+				posterform[1].style.display = "none";
+			}
+			if (posterNo.checked == true){
+				posterform[0].style.display = "none";
+				posterform[1].style.display = "none";
+			} else {
+				posterform[0].style.display = "block";
+				posterform[1].style.display = "block";
+			}
+		}
+	</script>
+		
+  </head>
+  <body>
+    
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark text-white d-flex flex-wrap justify-content-center py-3 mb-4">
+	  <div class="container-xl">
+			  <a href="index.html" class="text-info text-decoration-none h3 px-5">
+				CELMEC IX
+			  </a>
+
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarsExample03">
+			  <ul class="navbar-nav nav nav-pills">
+				<li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+				<li class="nav-item"><a href="speakers.html" class="nav-link text-white">Speakers</a></li>
+				<li class="nav-item"><a href="program.html" class="nav-link text-white">Program</a></li>
+				<li class="nav-item"><a href="register.html" class="nav-link text-muted" aria-current="page">Registration</a></li>
+				<li class="nav-item"><a href="participants.php" class="nav-link text-white">Participants</a></li>
+				<li class="nav-item"><a href="abstracts.html" class="nav-link text-white">Abstracts</a></li>
+				<li class="nav-item"><a href="topics.html" class="nav-link text-white">Topical collections</a></li>
+				<li class="nav-item"><a href="prizes.html" class="nav-link text-white">Prizes</a></li>
+				<li class="nav-item"><a href="hotel.html" class="nav-link text-white">Hotel</a></li>
+				<li class="nav-item"><a href="history.html" class="nav-link text-white">History</a></li>
+			  </ul>
+		  </div>
+	  </div>
+	</nav>
+
+	<section id="banner" class="pt-5 pb-2 my-5">
+		<div class="row flex-row-reverse align-items-center mx-auto">
+		  <div class="col-12 col-sm-6 col-lg-6">
+			<img src="images/logo3b.jpg" class="d-block mx-auto img-fluid" alt="LOGO CELMEC" width="200" height="70" loading="lazy">
+		  </div>
+		  <div class="col-12 col-sm-6 col-lg-6">
+			<p class="lead"><h1 class="text-light">Registration page</h1></p>
+		  </div>
+		</div>
+	</section>
+	
+	<p class="lead" align="center"><span class="h5">The registration is not yet available. </span><span class="badge bg-success">NEW</span></p>
+	
+	<div class="container col-xxl-12 mb-5">
+		
+  </body>
+</html>
